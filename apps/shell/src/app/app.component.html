@@ -1,6 +1,12 @@
-<ul class="remote-menu">
-  <li><a routerLink="/">Home</a></li>
-  <li><a routerLink="calendar">Calendar</a></li>
-  <li><a routerLink="workflow">Workflow</a></li>
-</ul>
+<mat-toolbar color="primary">
+  <span><a routerLink="/">Post Production</a></span>
+  <ul>
+    <li><a routerLink="calendar">
+      <button mat-stroked-button>Calendar</button>
+    </a></li>
+    <li><a routerLink="workflow">
+      <button mat-stroked-button>Workflow</button>
+    </a></li>
+  </ul>
+</mat-toolbar>
 <router-outlet></router-outlet>
