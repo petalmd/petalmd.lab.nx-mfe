@@ -8,12 +8,10 @@ Currently uninstalled but will probably be necessary :
 
 - [React](https://reactjs.org)
   - `npm install --save-dev @nrwl/react`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
 
 ## Generate an application
 
-Run `npx nx g @nx/angular:host appName` for a new Module Federated Angular Shell Application
+Run `npx nx g @nx/angular:host appName --dynamic` for a new Dynamic Module Federated Angular Shell Application
 Run `npx nx g @nx/angular:remote appName --host=shellName` for a new Angular Remote Application
 
 ## Generate a library
