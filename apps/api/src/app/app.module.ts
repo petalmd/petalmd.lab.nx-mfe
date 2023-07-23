@@ -1,11 +1,12 @@
 import { Module } from '@nestjs/common';
 
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AppDataSource } from '../../ormconfig';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { FeaturesNestWorkflowModule } from '@petal/features/nest/workflow';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [TypeOrmModule.forRoot(AppDataSource.options), FeaturesNestWorkflowModule],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
