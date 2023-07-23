@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@petal/features/angular/workflow": [
+        "libs/features/angular/workflow/src/index.ts"
+      ],
       "@petal/features/nest/workflow": [
         "libs/features/nest/workflow/src/index.ts"
       ]

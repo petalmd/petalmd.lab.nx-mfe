@@ -17,6 +17,7 @@
         "tsConfig": "apps/workflow/tsconfig.app.json",
         "assets": ["apps/workflow/src/favicon.ico", "apps/workflow/src/assets"],
         "styles": [
+          "apps/shell/src/styles.scss",
           "apps/workflow/src/styles.scss",
           "node_modules/@angular/material/prebuilt-themes/purple-green.css"
         ],

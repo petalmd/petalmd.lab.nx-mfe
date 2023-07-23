@@ -24,7 +24,7 @@ Run `npx nx g @nx/nest:app my-app --frontendProject my-frontend` to create a new
 
 ### Angular
 
-To be added
+Run `nx g @nx/angular:library my-lib --routing --lazy --parent ./apps/my-app/path/to/routes.ts` to generate a lazy-loaded library linked the route of the selected app
 
 ### React
 
