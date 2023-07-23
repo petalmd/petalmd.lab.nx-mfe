@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@petal/features/nest/workflow": [
+        "libs/features/nest/workflow/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

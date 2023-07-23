@@ -11,16 +11,32 @@ Currently uninstalled but will probably be necessary :
 
 ## Generate an application
 
-Run `npx nx g @nx/angular:host appName --dynamic` for a new Dynamic Module Federated Angular Shell Application
-Run `npx nx g @nx/angular:remote appName --host=shellName` for a new Angular Remote Application
+### Angular
+
+Run `npx nx g @nx/angular:host my-app --dynamic` for a new Dynamic Module Federated Angular Shell Application
+Run `npx nx g @nx/angular:remote my-app --host=shellName` for a new Angular Remote Application
+
+### NestJS
+
+Run `npx nx g @nx/nest:app my-app --frontendProject my-frontend` to create a new NestJS app with a proxy between FE and BE
 
 ## Generate a library
 
+### Angular
+
+To be added
+
+### React
+
 Run `nx g @nrwl/react:lib my-lib` to generate a library.
+
+### NestJS
+
+Run `nx g @nx/nest:lib my-lib` to generate a library
 
 ## Development server
 
-Run `npx nx serve shellName --devRemotes=remote1Name,remote2Name` to run your shell application with its remotes
+Run `npx nx serve my-shell` to run your shell application with its remotes
 
 ## Code scaffolding
 
