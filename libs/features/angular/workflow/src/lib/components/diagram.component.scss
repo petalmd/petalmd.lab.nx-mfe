@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  background-color: white;
+  height: calc(100% - 140px);
+  color: black;
+  margin: 1em 1em 2em;
+  border: 3px solid black;
+  border-radius: 5px;
+
+  .content, .canvas {
+    height: 100%;
+    width: 100%;
+  }
+
+  .save {
+    position: absolute;
+    bottom: 1em;
+    right: calc(1em + 5px);
+  }
+}

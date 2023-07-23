@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -20,7 +21,8 @@
       ],
       "@petal/features/nest/workflow": [
         "libs/features/nest/workflow/src/index.ts"
-      ]
+      ],
+      "@petal/store/workflow": ["libs/store/workflow/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
