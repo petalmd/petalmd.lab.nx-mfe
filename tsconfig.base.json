@@ -16,6 +16,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@petal/features/angular/calendar": [
+        "libs/features/angular/calendar/src/index.ts"
+      ],
+      "@petal/features/angular/socket": [
+        "libs/features/angular/socket/src/index.ts"
+      ],
       "@petal/features/angular/workflow": [
         "libs/features/angular/workflow/src/index.ts"
       ],
@@ -30,6 +36,8 @@
       "@petal/features/nest/workflow": [
         "libs/features/nest/workflow/src/index.ts"
       ],
+      "@petal/store/schedule": ["libs/store/schedule/src/index.ts"],
+      "@petal/store/user": ["libs/store/user/src/index.ts"],
       "@petal/store/workflow": ["libs/store/workflow/src/index.ts"]
     }
   },

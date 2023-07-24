@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Task Transfer</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <mat-label>Select the recipient</mat-label>
+      <mat-select formControlName="user">
+        <mat-option *ngFor="let user of list$ | async" [value]="user" [disabled]="+loggedIn.id === +user.id">
+          {{ user.firstName }} {{ user.lastName }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+  <div mat-dialog-actions>
+    <button mat-button (click)="cancel()" mat-raised-button>No Thanks</button>
+    <button mat-button (click)="confirm()" mat-raised-button color="primary" cdkFocusInitial [disabled]="form.invalid">Ok</button>
+  </div>
+</div>
