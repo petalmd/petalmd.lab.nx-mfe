@@ -19,6 +19,9 @@
       "@petal/features/angular/workflow": [
         "libs/features/angular/workflow/src/index.ts"
       ],
+      "@petal/features/nest/change-request": [
+        "libs/features/nest/change-request/src/index.ts"
+      ],
       "@petal/features/nest/schedule": [
         "libs/features/nest/schedule/src/index.ts"
       ],
