@@ -1,4 +1,5 @@
 {
   "calendar": "http://localhost:4201",
-  "workflow": "http://localhost:4202"
+  "workflow": "http://localhost:4202",
+  "notification": "http://localhost:4203"
 }

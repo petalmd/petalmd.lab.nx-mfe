@@ -19,6 +19,9 @@
       "@petal/features/angular/calendar": [
         "libs/features/angular/calendar/src/index.ts"
       ],
+      "@petal/features/angular/notification": [
+        "libs/features/angular/notification/src/index.ts"
+      ],
       "@petal/features/angular/socket": [
         "libs/features/angular/socket/src/index.ts"
       ],
