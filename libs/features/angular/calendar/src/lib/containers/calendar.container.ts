@@ -30,8 +30,10 @@ export class CalendarContainerComponent {
   public events$: Observable<EventInput> = this.facade.schedules();
 
   constructor(private route: ActivatedRoute, private facade: FeatureCalendarFacade) {
-    this.route.params.pipe(takeUntilDestroyed()).subscribe((params: any) => {
-      this.facade.load(params.id);
-    });
+    this.route.params
+      .pipe(takeUntilDestroyed())
+      .subscribe((params: any) => {
+        this.facade.load(params.id);
+      });
   }
 }
