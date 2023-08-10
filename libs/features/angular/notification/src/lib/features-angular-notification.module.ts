@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { TextFieldModule } from '@angular/cdk/text-field';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from "@angular/material/icon";
+import { MatTooltipModule } from "@angular/material/tooltip";
 import { featuresAngularNotificationRoutes } from './lib.routes';
 import { NotificationContainerComponent } from './containers/notification/notification.container';
 import { COMPONENTS } from './components';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [NotificationContainerComponent, ...COMPONENTS],
   imports: [
     CommonModule,
-    TextFieldModule,
-    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
     RouterModule.forChild(featuresAngularNotificationRoutes),
   ],
 })
